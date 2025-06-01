@@ -26,7 +26,6 @@
 import React, {useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
 const AddDepartment = () => {
 
 
@@ -45,7 +44,7 @@ const AddDepartment = () => {
         e.preventDefault();
     //    console.log(department);
         try{
-           const response =await axios.post("http://localhost:3000/api/department/add",department,{
+           const response =await axios.post("https://ems-project-backend.onrender.com/api/department/add",department,{
             headers: {
                 "Authorization" : `Bearer ${localStorage.getItem("token")}`,
             }
