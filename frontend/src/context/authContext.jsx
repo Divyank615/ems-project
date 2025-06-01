@@ -17,7 +17,7 @@ const AuthProvider = ({children}) => {
         //      console.log("Verifying User...");
         //      console.log("Token found:", token);
               if(token){
-              const response =await axios.get('http://localhost:3000/api/auth/verify',{
+              const response =await axios.get('https://ems-project-backend.onrender.com/api/auth/verify',{
                 headers: {
                     "Authorization" : `Bearer ${token} `
                 }
