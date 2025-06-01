@@ -123,7 +123,7 @@ const handleChange =(e)=>{
 const handleSubmit =async(e) =>{
     e.preventDefault();
     try{
-          const response =await axios.post(`http://localhost:3000/api/leave/add`,leave,{
+          const response =await axios.post(`https://ems-project-backend.onrender.com/api/leave/add`,leave,{
             headers: {
               "Authorization": `Bearer ${localStorage.getItem("token")}`
               }
