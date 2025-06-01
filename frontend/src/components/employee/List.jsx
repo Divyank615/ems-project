@@ -17,7 +17,7 @@ const List = () => {
 
         setEmpLoading(true)
         try{
-          const response =await axios.get('http://localhost:3000/api/employee',{
+          const response =await axios.get('https://ems-project-backend.onrender.com/api/employee',{
             headers: {
               "Authorization": `Bearer ${localStorage.getItem("token")}`
               }
